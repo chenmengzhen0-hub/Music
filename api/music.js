@@ -3,12 +3,13 @@ export default async function handler(req, res) {
   const {kw,id}=req.query;
   try{
     if(id){
-      const r=await fetch('https://music.163.com/api/song/enhance/player/url?id='+id+'&ids=%5B'+id+'%5D&br=128000',{
-        headers:{'Referer':'https://music.163.com/','Cookie':'os=pc; appver=8.0.0'}
-      });
+      // 用第三方解析接口拿播放地址
+      const r=await fetch('https://api.injahow.cn/meting/?server=netease&type=url&id='+id);
       const d=await r.json();
-      return res.json({url:d?.data?.[0]?.url||null});
+      const url=Array.isArray(d)?d[0]?.url:(d?.url||null);
+      return res.json({url});
     }
+    // 搜索还是用网易云官方
     const r=await fetch('https://music.163.com/api/search/get',{
       method:'POST',
       headers:{'Referer':'https://music.163.com/','Content-Type':'application/x-www-form-urlencoded'},
@@ -23,4 +24,5 @@ export default async function handler(req, res) {
     res.json({data:songs});
   }catch(e){res.status(500).json({error:e.message});}
 }
+
 
