@@ -1,28 +1,26 @@
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin','*');
-  res.setHeader('Access-Control-Allow-Methods','GET');
   const {kw,id}=req.query;
-  
   try{
     if(id){
-      // 获取播放地址
-      const r=await fetch('https://api.lolimi.cn/API/wydg/?msg='+encodeURIComponent('id:'+id)+'&num=1&type=json');
+      const r=await fetch('https://music.163.com/api/song/enhance/player/url?id='+id+'&ids=%5B'+id+'%5D&br=128000',{
+        headers:{'Referer':'https://music.163.com/','Cookie':'os=pc; appver=8.0.0'}
+      });
       const d=await r.json();
-      const url=d?.data?.[0]?.url||d?.url||null;
-      return res.json({url});
+      return res.json({url:d?.data?.[0]?.url||null});
     }
-    // 搜索
-    const r=await fetch('https://api.lolimi.cn/API/wydg/?msg='+encodeURIComponent(kw||'')+'&num=8&type=json');
+    const r=await fetch('https://music.163.com/api/search/get',{
+      method:'POST',
+      headers:{'Referer':'https://music.163.com/','Content-Type':'application/x-www-form-urlencoded'},
+      body:'s='+encodeURIComponent(kw||'')+'&type=1&limit=10&offset=0'
+    });
     const d=await r.json();
-    const list=d?.data||[];
-    const songs=list.map(s=>({
-      id:s.id||s.mid||String(Math.random()),
-      name:s.title||s.name||kw,
-      artist:s.author||s.singer||'',
-      url:s.url||null
+    const songs=(d?.result?.songs||[]).map(s=>({
+      id:s.id,name:s.name,
+      artist:(s.artists||[]).map(a=>a.name).join('/'),
+      url:null
     }));
     res.json({data:songs});
-  }catch(e){
-    res.status(500).json({error:e.message});
-  }
+  }catch(e){res.status(500).json({error:e.message});}
 }
+
