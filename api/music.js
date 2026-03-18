@@ -3,11 +3,12 @@ export default async function handler(req, res) {
   const {kw,id}=req.query;
   try{
     if(id){
-      // 用第三方解析接口拿播放地址
-      const r=await fetch('https://api.injahow.cn/meting/?server=netease&type=url&id='+id);
-      const d=await r.json();
-      const url=Array.isArray(d)?d[0]?.url:(d?.url||null);
+      
+            const r=await fetch('https://api.injahow.cn/meting/?server=netease&type=url&id='+id,{redirect:'manual'});
+      // 直接返回重定向地址或原始地址
+      const url=r.headers.get('location')||('https://api.injahow.cn/meting/?server=netease&type=url&id='+id);
       return res.json({url});
+
     }
     // 搜索还是用网易云官方
     const r=await fetch('https://music.163.com/api/search/get',{
