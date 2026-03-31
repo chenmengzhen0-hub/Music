@@ -11,7 +11,8 @@ export default async function handler(req, res) {
     var resp = await fetch('https://api.fish.audio/v1/tts', {
       method: 'POST',
       headers: {
-        'Authorization': 'Bearer ' + apiKey,
+        'Authorization': apiKey,
+
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(body)
