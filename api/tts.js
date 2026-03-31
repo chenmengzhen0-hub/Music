@@ -13,12 +13,11 @@ export default async function handler(req, res) {
     var resp = await fetch('https://api.fish.audio/v1/tts', {
       method: 'POST',
       headers: {
-        'Authorization': 'token ' + apiKey,
+               'Authorization': 'Bearer ' + apiKey,
+               'Content-Type': 'application/json',
+               'model': 's2-pro'
+               },
 
-
-
-        'Content-Type': 'application/json'
-      },
       body: JSON.stringify(body)
     });
     if (!resp.ok) {
