@@ -8,10 +8,13 @@ export default async function handler(req, res) {
   try {
     var apiKey = (req.headers['authorization'] || '').replace('Bearer ', '');
     var body = req.body;
+    console.log('key received:', apiKey, 'length:', apiKey.length);
+
     var resp = await fetch('https://api.fish.audio/v1/tts', {
       method: 'POST',
       headers: {
-        'Authorization': apiKey,
+        'Authorization': 'Bearer ' + apiKey,
+
 
         'Content-Type': 'application/json'
       },
