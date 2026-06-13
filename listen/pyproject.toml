@@ -1,0 +1,17 @@
+[project]
+name = "listen"
+version = "0.1.0"
+description = "给克劳德的耳朵 — 把音频转成结构化音符数据"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "basic-pitch>=0.3.0",
+    "onnxruntime>=1.16.0",
+    "pretty-midi>=0.2.10",
+    "scipy>=1.10.0",
+    "librosa>=0.10.0",
+]
+
+[project.scripts]
+listen = "whale_listen:main"
