@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "source": "still_gemini.mp4",
+    "note_count": 43,
+    "duration_sec": 30.7664,
+    "format": "listen-notes-v1",
+    "engine": "librosa-pyin"
+  },
+  "notes": [
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 0.0464,
+      "end": 0.8824,
+      "duration": 0.8359,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 0.9752,
+      "end": 1.2539,
+      "duration": 0.2786,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 1.3003,
+      "end": 1.6486,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 1.6951,
+      "end": 2.0898,
+      "duration": 0.3947,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 2.1362,
+      "end": 2.4845,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 2.531,
+      "end": 2.8793,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 2.9257,
+      "end": 3.3205,
+      "duration": 0.3947,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 3.3669,
+      "end": 4.5511,
+      "duration": 1.1842,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 4.5976,
+      "end": 5.7585,
+      "duration": 1.161,
+      "velocity": 80
+    },
+    {
+      "pitch": 55,
+      "name": "G3",
+      "start": 5.8282,
+      "end": 6.1765,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 6.2462,
+      "end": 6.4319,
+      "duration": 0.1858,
+      "velocity": 80
+    },
+    {
+      "pitch": 45,
+      "name": "A2",
+      "start": 6.4551,
+      "end": 7.4536,
+      "duration": 0.9985,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 7.6394,
+      "end": 7.8483,
+      "duration": 0.209,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 7.8948,
+      "end": 8.1966,
+      "duration": 0.3019,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 8.2895,
+      "end": 8.6378,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 52,
+      "name": "E3",
+      "start": 8.7075,
+      "end": 8.9397,
+      "duration": 0.2322,
+      "velocity": 80
+    },
+    {
+      "pitch": 55,
+      "name": "G3",
+      "start": 9.1254,
+      "end": 9.3112,
+      "duration": 0.1858,
+      "velocity": 80
+    },
+    {
+      "pitch": 51,
+      "name": "D#3",
+      "start": 9.497,
+      "end": 12.0512,
+      "duration": 2.5542,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 12.0744,
+      "end": 12.6781,
+      "duration": 0.6037,
+      "velocity": 80
+    },
+    {
+      "pitch": 52,
+      "name": "E3",
+      "start": 12.7013,
+      "end": 13.8391,
+      "duration": 1.1378,
+      "velocity": 80
+    },
+    {
+      "pitch": 50,
+      "name": "D3",
+      "start": 14.0249,
+      "end": 14.4893,
+      "duration": 0.4644,
+      "velocity": 80
+    },
+    {
+      "pitch": 50,
+      "name": "D3",
+      "start": 14.6286,
+      "end": 16.0682,
+      "duration": 1.4396,
+      "velocity": 80
+    },
+    {
+      "pitch": 41,
+      "name": "F2",
+      "start": 16.1843,
+      "end": 16.8809,
+      "duration": 0.6966,
+      "velocity": 80
+    },
+    {
+      "pitch": 57,
+      "name": "A3",
+      "start": 16.9506,
+      "end": 17.2756,
+      "duration": 0.3251,
+      "velocity": 80
+    },
+    {
+      "pitch": 41,
+      "name": "F2",
+      "start": 17.3453,
+      "end": 17.6936,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 41,
+      "name": "F2",
+      "start": 17.74,
+      "end": 18.1116,
+      "duration": 0.3715,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 18.1348,
+      "end": 18.3205,
+      "duration": 0.1858,
+      "velocity": 80
+    },
+    {
+      "pitch": 52,
+      "name": "E3",
+      "start": 18.5295,
+      "end": 18.8546,
+      "duration": 0.3251,
+      "velocity": 80
+    },
+    {
+      "pitch": 55,
+      "name": "G3",
+      "start": 18.9243,
+      "end": 19.3654,
+      "duration": 0.4412,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 19.4351,
+      "end": 19.5512,
+      "duration": 0.1161,
+      "velocity": 80
+    },
+    {
+      "pitch": 45,
+      "name": "A2",
+      "start": 19.5744,
+      "end": 20.6658,
+      "duration": 1.0913,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 20.689,
+      "end": 20.9908,
+      "duration": 0.3019,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 21.0373,
+      "end": 21.3856,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 52,
+      "name": "E3",
+      "start": 21.4088,
+      "end": 22.6395,
+      "duration": 1.2307,
+      "velocity": 80
+    },
+    {
+      "pitch": 52,
+      "name": "E3",
+      "start": 22.7556,
+      "end": 23.4289,
+      "duration": 0.6734,
+      "velocity": 80
+    },
+    {
+      "pitch": 41,
+      "name": "F2",
+      "start": 23.4754,
+      "end": 23.7076,
+      "duration": 0.2322,
+      "velocity": 80
+    },
+    {
+      "pitch": 45,
+      "name": "A2",
+      "start": 23.8701,
+      "end": 24.172,
+      "duration": 0.3019,
+      "velocity": 80
+    },
+    {
+      "pitch": 50,
+      "name": "D3",
+      "start": 24.2416,
+      "end": 27.5621,
+      "duration": 3.3205,
+      "velocity": 80
+    },
+    {
+      "pitch": 48,
+      "name": "C3",
+      "start": 27.7478,
+      "end": 28.7927,
+      "duration": 1.0449,
+      "velocity": 80
+    },
+    {
+      "pitch": 36,
+      "name": "C2",
+      "start": 28.8392,
+      "end": 29.1875,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 41,
+      "name": "F2",
+      "start": 29.7448,
+      "end": 30.0002,
+      "duration": 0.2554,
+      "velocity": 80
+    },
+    {
+      "pitch": 45,
+      "name": "A2",
+      "start": 30.0931,
+      "end": 30.4414,
+      "duration": 0.3483,
+      "velocity": 80
+    },
+    {
+      "pitch": 41,
+      "name": "F2",
+      "start": 30.4646,
+      "end": 30.7897,
+      "duration": 0.3251,
+      "velocity": 80
+    }
+  ],
+  "analysis": {
+    "pitch_range": {
+      "lowest": "C2",
+      "highest": "A3",
+      "span_semitones": 21
+    },
+    "velocity": {
+      "min": 80,
+      "max": 80,
+      "avg": 80.0
+    },
+    "density_per_sec": [
+      2,
+      2,
+      3,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      2,
+      2,
+      3,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    "busiest_sec": 2,
+    "longest_silence": {
+      "seconds": 0.5573,
+      "starts_at": 29.1875
+    },
+    "notes_per_sec_avg": 1.4
+  }
+}
