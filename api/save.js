@@ -17,7 +17,9 @@ export default async function handler(req, res) {
   }
 
   const user = req.query.user || 'meng';
-  const key = `silica_save:${user}`;
+  // source=s11 → 硅基小镇独立 key，避免与桃花源数据碰撞
+  const source = req.query.source || '';
+  const key = source === 's11' ? `s11_save:${user}` : `silica_save:${user}`;
 
   try {
     if (req.method === 'GET') {
